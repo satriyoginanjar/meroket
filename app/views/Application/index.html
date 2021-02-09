@@ -1,0 +1,33 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+<main>
+    <!-- Slider Area Start-->
+    <div class="slider-area ">
+        <div class="slider-active">
+            <div class="single-slider slider-height d-flex align-items-center" data-background="@{'public/assets/img/hero/h1_hero.png'}">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-7 col-md-9 ">
+                            <div class="hero__caption" data-animation="fadeInRight" data-delay="1s">
+                                <h1 > Lebih dari 1000 Triliun <br> anggaran belanja pemerintah</h1>
+                                <p >Cari peluang bisnis anda bersama kami, kami akan memandu anda dan menyediakan jasa informasi paket pekerjaan
+                                    tender dan non tender di seluruh pemerintah pusat dan pemerintah daerah.</p>
+                                <!-- Hero-btn -->
+                                <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
+                                    <a href="@{MonevCtr.index()}" class="btn hero-btn">Cari tahu lebih dalam tentang peluang bisnis anda</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="hero__img d-none d-lg-block" data-animation="fadeInRight" data-delay="1s">
+                                <img src="@{'/public/assets/img/hero/hero_right.png'}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>

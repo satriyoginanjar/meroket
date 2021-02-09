@@ -1,0 +1,39 @@
+#{extends 'main.html' /} #{set title:'Daftar Belanja KLPD' /}
+<!--datatable-->
+
+    <div class="services-area">
+        <div class="container">
+            <!-- Section-tittle -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-tittle text-center mb-80">
+                        <h2>Belanja Pengadaan Pemerintah Pusat dan Daerah</h2>
+                    </div>
+                </div>
+            </div>
+            <div style="margin : 10px;">
+                <table id="rekapKldi" class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Jenis</th>
+                        <th scope="col">Nama Instansi</th>
+                        <th scope="col">Paket Tender</th>
+                        <th scope="col">Paket Non Tender</th>
+                        <th scope="col">Anggaran Belanja</th>
+                        <th scope="col">Detail</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+#{datatables.totalAnggaranKlpd tahun:TAHUN_ANGGARAN_SESSION/}
