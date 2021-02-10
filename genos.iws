@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8425861e-7b60-4552-8335-a339e4090085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/MonevCtr/pemula.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/MonevCtr.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/MonevCtr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/MonevCtr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/MonevCtr/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genos.iws" beforeDir="false" afterPath="$PROJECT_DIR$/genos.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_MonevCtr_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_MonevCtr_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.MonevCtr" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.MonevCtr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/MonevCtr.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/MonevCtr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/MonevCtr/pemula.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/MonevCtr/pemula.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
