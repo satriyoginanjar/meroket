@@ -1,0 +1,61 @@
+#{extends 'main.html' /} #{set title:'Panduan PBJ' /}
+<div class="first">
+    <div class="we-create-area create-padding" style="margin-top: -130px;">
+        <div class="container">
+                <div class="col-lg-6 col-md-12">
+                    <div class="we-create-img">
+                        <img src="@{'public/assets/img/panduan/satu.png'}" alt="" style="float:left;">
+                    </div>
+                </div>
+                <div >
+                    <div class="we-create-cap">
+                        <h2>Apa itu Pengadaan Barang Jasa Pemerintah</h2>
+                        <p>Penjelasan sederhananya pengadaan itu adalah belanja, nah setiap pemerintah itu pasti punya kebutuhan belanja barang dan jasa
+                            untuk mendukung kegiatannya, kebutuhan tersebut dapat di peroleh dengan cara <b>tender</b> dan <b>
+                            non tender</b>.<br>Dengan cara tender artinya mendapatkan barang jasa melalui aplikasi SPSE
+                            (Sistem Pengadaan Secara Elektronik) yang sudah tersedia di setiap pemerintah dan dengan cara non tender artinya mendapatkan
+                            barang jasa pemerintah tidak menggunakan SPSE, pemerintah dapat menentukan siapa penyedia yang
+                            dipilih untuk berkontrak dengannya menyediakan barang jasa yang di butuhkan.</p>
+                        <a href="#" class="btn hero-btn" id="first">Cari tau lebih dalam terkait tender dan non tender</a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <div class="we-create-area create-padding"  style="margin-top: -100px;">
+        <div class="container" id="second">
+            <div class="col-lg-6 col-md-12">
+                <div class="we-create-img">
+                    <img src="@{'public/assets/img/panduan/dua1.png'}" alt="" style="float:left;">
+                </div>
+            </div>
+            <div >
+                <div class="we-create-cap">
+                    <h3>Jenis Pengadaan dan Metode Pemilihan</h3>
+                    <p>
+                        Tender dan non tender adalah pengelompokan metode pemilihan secara sederhana berdasarkan jenis pengadaan,
+                        jenis pengadaan terdiri dari: <br>
+                        &nbsp;&nbsp;1. Barang<br>
+                        &nbsp;&nbsp;2. Pekerjaan Konstruksi<br>
+                        &nbsp;&nbsp;3. Jasa Konsultansi<br>
+                        &nbsp;&nbsp;4. Jasa Lainnya<br>
+                        Bahasa sederhananya jenis pengadaan adalah ruang lingkup. Hubungannya apa antara metode pemilihan dan jenis pengadaan?
+                        cek tabel di bawah ya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    $("#first").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#second").offset().top
+    },
+    'slow');
+});
+</script>

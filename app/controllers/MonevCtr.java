@@ -13,4 +13,7 @@ public class MonevCtr extends Application{
     public static void detailAnggaranKlpd(String kdKlpd){
         render();
     }
+    public static void pemula(){
+        render();
+    }
 }
