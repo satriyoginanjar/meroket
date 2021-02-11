@@ -43,19 +43,74 @@
                         &nbsp;&nbsp;3. Jasa Konsultansi<br>
                         &nbsp;&nbsp;4. Jasa Lainnya<br>
                         Bahasa sederhananya jenis pengadaan adalah ruang lingkup. Hubungannya apa antara metode pemilihan dan jenis pengadaan?
-                        cek tabel di bawah ya.
+                        Bagaimana contoh kasusnya? cek tabel di bawah ya.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
+<div class="container" id="third" style="margin-top : 100px;">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th colspan="4" style="text-align: center">KELOMPOK NON TENDER</th>
+        </tr>
+        <tr>
+            <th scope="col" width="10" style="text-align: center">No.</th>
+            <th scope="col" class="col-md-2" style="text-align: center">Metode Pemilihan</th>
+            <th scope="col" class="col-md-2" style="text-align: center">Jenis Pengadaan</th>
+            <th scope="col" style="text-align: center">Penjelasan Dan Contoh Kasus</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row"><p>1</p></th>
+            <td scope="row"><p>Pengadaan Langsung</p></td>
+            <td scope="row"><p>Barang, Pekerjaan Konstruksi dan Jasa Lainnya</p></td>
+            <td scope="row">
+                <p>
+                    Apabila pemerintah belanja dengan jenis barang atau pekerjaan konstruksi atau jasa lainnya dengan nilai kontrak
+                paling banyak 200 juta (<= 200 JT), maka di perbolehkan menggunakan pengadaan langsung. <br>
+                Contoh kasus : Kementerian Pendidikan membutuhkan jamuan rapat, seperti snack, minuman dan sebagainya,
+                apabila anggarannya di bawah 200 juta maka kemendikbud dapat langsung memilih penyedia untuk berkontrak dengannya.
+                Dalam kasus ini berarti kemendikbud butuh barang, dan dapat menggunakan pengadaan langsung.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><p>2</p></th>
+            <td scope="row"><p>Pengadaan Langsung</p></td>
+            <td scope="row"><p>Jasa Konsultansi</p></td>
+            <td scope="row">
+                <p>
+                    Apabila pemerintah belanja dengan jenis jasa konsultansi dengan nilai kontrak
+                paling banyak 100 juta (<= 100 JT), maka di perbolehkan menggunakan pengadaan langsung. <br>
+                Contoh kasus : Kementerian Dalam Negeri membutuhkan jasa konsultan untuk melakukan analisa data anggaran pemerintah daerah, apabila
+                anggarannya di bawah 100 juta maka kemendagri dapat langsung memilih penyedia untuk berkontrak dengannya.
+                Dalam kasus ini berarti kemendagri butuh konsultan, dan dapat menggunakan pengadaan langsung.
+                </p>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
 
 <script>
-    $("#first").click(function() {
+$("#first").click(function() {
   $('html,body').animate({
       scrollTop: $("#second").offset().top
-    },
+  },
+    'slow');
+});
+
+$("#second").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#third").offset().top
+  },
     'slow');
 });
 </script>
