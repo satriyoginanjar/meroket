@@ -4,7 +4,7 @@
         <div class="container">
                 <div class="col-lg-6 col-md-12">
                     <div class="we-create-img">
-                        <img src="@{'public/assets/img/panduan/satu.png'}" alt="" style="float:left;">
+                        <img src="@{'public/assets/img/panduan/satu1.png'}" alt="" style="float:left;">
                     </div>
                 </div>
                 <div >
@@ -50,7 +50,7 @@
         </div>
     </div>
 
-<div class="container" id="third" style="margin-top : -100px;">
+<div class="container" style="margin-top : -100px;">
     <table class="table table-hover">
         <thead>
         <tr>
@@ -92,9 +92,69 @@
                 </p>
             </td>
         </tr>
+        <tr>
+            <th scope="row"><p>3</p></th>
+            <td scope="row"><p>Penunjukan Langsung</p></td>
+            <td scope="row"><p>Barang, Pekerjaan Konstruksi, Jasa Konsultansi dan Jasa Lainnya</p></td>
+            <td scope="row">
+                <p>
+                    Apabila pemerintah belanja dengan jenis barang, pekerjaan Konstruksi, jasa konsultansi dan jasa lainnya, namun dalam kasus ini
+                    mengalami keadaan darurat contoh bencana alam, keaadaan yang harus segera mendapatkan penyedia atau
+                    sudah melakukan tender namun 3x gagal tender maka di perbolehkan menggunakan penunjukan langsung. <br>
+                    Contoh kasus : Kementerian Perindustrian membutuhkan jasa konsultan untuk mengerjakan proyek machine learning dengan nilai kontrak lebih dari 100 juta maka wajib tender,
+                    namun ketika sudah melakukan proses tender, selalu gagal tender sebanyak 3x, maka kemenperin diperbolehkan menggunakan penunjukan langsung, artinya kemenperin boleh menunjuk langsung
+                    siapa penyedia yang berkontrak dengannya tanpa harus melakukan proses tender lagi.
+                </p>
+            </td>
+        </tr>
 
         </tbody>
     </table>
+</div>
+
+<div class="container" style="margin : 100px auto 50px auto;">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th colspan="4" style="text-align: center">KELOMPOK TENDER</th>
+        </tr>
+        <tr>
+            <th scope="col" width="10" style="text-align: center">No.</th>
+            <th scope="col" class="col-md-2" style="text-align: center">Metode Pemilihan</th>
+            <th scope="col" class="col-md-2" style="text-align: center">Jenis Pengadaan</th>
+            <th scope="col" style="text-align: center">Penjelasan Dan Contoh Kasus</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row"><p>1</p></th>
+            <td scope="row"><p>Tender</p></td>
+            <td scope="row"><p>Barang, Pekerjaan Konstruksi dan Jasa Lainnya</p></td>
+            <td scope="row">
+                <p>
+                    Apabila pemerintah belanja dengan jenis barang atau pekerjaan konstruksi atau jasa lainnya dengan nilai kontrak
+                    lebih dari 200 juta (> 200 JT), maka wajib menggunakan proses tender, untuk proses tender dapat membukan alamat website SPSE masing masing instansi. <br>
+                    Contoh kasus : Kementerian Pendidikan membutuhkan mobil untuk pejabat eselon senilai 500 juta,
+                    maka penyedia dapat mengajukan penawaran di alamat https://lpse.kemdikbud.go.id/eproc4
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><p>2</p></th>
+            <td scope="row"><p>Seleksi</p></td>
+            <td scope="row"><p>Jasa Konsultansi</p></td>
+            <td scope="row">
+                <p>
+                    Apabila pemerintah belanja dengan jenis jasa konsultansi dengan nilai kontrak
+                    lebih dari 100 juta <br>(> 100 JT), maka wajib menggunakan proses tender, untuk proses tender dapat membukan alamat website SPSE masing masing instansi. <br>
+                    Contoh kasus : Kementerian Dalam Negeri membutuhkan jasa konsultan data scientist untuk membuat proyek big data senilai 200 juta
+                    maka penyedia dapat mengajukan penawaran di alamat https://lpse.kemendagri.go.id/eproc4/
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a href="@{MonevCtr.daftarKlpd()}" class="btn hero-btn" id="first">lihat daftar anggaran</a>
 </div>
 
 
@@ -102,14 +162,7 @@
 <script>
 $("#first").click(function() {
   $('html,body').animate({
-      scrollTop: $("#second").offset().top
-  },
-    'slow');
-});
-
-$("#third").click(function() {
-  $('html,body').animate({
-      scrollTop: $("#four").offset().top
+      scrollTop: $("#second").offset().top -100
   },
     'slow');
 });
