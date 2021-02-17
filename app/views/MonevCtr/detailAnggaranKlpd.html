@@ -1,0 +1,193 @@
+    #{extends 'main.html' /} #{set title:'Detail Anggaran' /}
+<style>
+    .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    margin:10px;
+    border-radius: 11px;
+    }
+    span {font-size:10px;}
+</style>
+
+<div class="what-we-do">
+    <div class="services-area">
+        <div class="container">
+            <!-- Section-tittle -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-tittle text-center mb-80">
+                        <h2>${klpd.nama}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grey-bg container-fluid">
+            <section id="minimal-statistics">
+                <div class="row">
+                    <div class="col-12 mt-3 mb-1">
+                        <h4 class="text-uppercase">Minimal Statistics Cards</h4>
+                        <p>Rangkuman Paket Pengadaan ${klpd.nama} Tahun Anggaran 2021</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="align-self-center">
+                                            <i class="icon-pencil primary font-large-2 float-left"></i>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h3>${jumlahSatker}</h3>
+                                            <span>Jumlah Satuan Kerja</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="align-self-center">
+                                            <i class="icon-speech warning font-large-2 float-left"></i>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h3>${jumPengadaanLangsung}</h3>
+                                            <span>Jumlah Paket Pengadaan Langsung</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="align-self-center">
+                                            <i class="icon-graph success font-large-2 float-left"></i>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h3>${jumPenunjukanLangsung}</h3>
+                                            <span>Jumlah Paket Penunjukan Langsung</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="align-self-center">
+                                            <i class="icon-pointer danger font-large-2 float-left"></i>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h3>${jumSayembara}</h3>
+                                            <span>Jumlah Paket Sayembara</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="media-body text-left">
+                                            <h3 class="danger">${jumTender}</h3>
+                                            <span>Jumlah Paket Tender</span>
+                                        </div>
+                                        <div class="align-self-center">
+                                            <i class="icon-rocket danger font-large-2 float-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="media-body text-left">
+                                            <h3 class="success">${jumTenderCepat}</h3>
+                                            <span>Jumlah Paket Tender Cepat</span>
+                                        </div>
+                                        <div class="align-self-center">
+                                            <i class="icon-user success font-large-2 float-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="media-body text-left">
+                                            <h3 class="warning">${jumSeleksi}</h3>
+                                            <span>Jumlah Paket Seleksi</span>
+                                        </div>
+                                        <div class="align-self-center">
+                                            <i class="icon-pie-chart warning font-large-2 float-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="media-body text-left">
+                                            <h3 class="primary">${jumEpurchasing}</h3>
+                                            <span>Jumlah Paket e-Purchasing</span>
+                                        </div>
+                                        <div class="align-self-center">
+                                            <i class="icon-support primary font-large-2 float-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+
+
+
+
+
+</div>
