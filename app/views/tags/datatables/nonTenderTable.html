@@ -9,11 +9,11 @@ $(document).ready(function() {
 	var oTable = oTable = $('#nonTenderTable').dataTable({
 		aoColumns: [
             { 	"sWidth": "2%",  "bSortable": false },
-            { 	"sWidth": "53%", "bSortable": false },
+            { 	"sWidth": "53%", "bSortable": false, className:"nm_pkt" },
             { 	"sWidth": "10%", "bSortable": false },
             { 	"sWidth": "10%", "bSortable": false },
             { 	"sWidth": "10%", "bSortable": false },
-            { 	"sWidth": "15%", "bSortable": true, render: $.fn.dataTable.render.number( '.', ',', 0, '',' ' ) },
+            { 	"sWidth": "15%", "bSortable": true, render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp. ',' ' ) },
 	 	],
 
 
