@@ -6,25 +6,21 @@
 $(document).ready(function() {
 
 
-	var oTable = oTable = $('#rekapKldi').dataTable({
+	var oTable = oTable = $('#nonTenderTable').dataTable({
 		aoColumns: [
-            { 	"sWidth": "5%",  "bSortable": false },
+            { 	"sWidth": "2%",  "bSortable": false },
+            { 	"sWidth": "53%", "bSortable": false },
             { 	"sWidth": "10%", "bSortable": false },
-            { 	"sWidth": "45%", "bSortable": false },
             { 	"sWidth": "10%", "bSortable": false },
             { 	"sWidth": "10%", "bSortable": false },
-            { 	"sWidth": "15%", "bSortable": true, render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp. ',' M' ) },
-            {   "sWidth": "5%",  "bSortable": false, render: function(data, oObj, row){
-                    return '<a href="'+path+'/MonevCtr/detailAnggaranKlpd?kdKlpd='+row[0]+'"><i class="bi bi-bookmark-check" style="color:black; font-size:20px;"></i></span></a>&nbsp;';
-                }
-            },
+            { 	"sWidth": "15%", "bSortable": true, render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp. ',' ' ) },
 	 	],
 
 
         pagingType: "full_numbers",
         processing: true,
         serverSide: true,
-        sAjaxSource: "@{DataTableCtr.dataTableRupKldi2017(_tahun)}",
+        sAjaxSource: "@{DataTableCtr.dataTableNonTenderKldi(_kdKlpd,_tahun)}",
         drawCallback: function ( oSettings ) {
  			/* Need to redo the counters if filtered or sorted */
             if ( oSettings ){

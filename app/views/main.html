@@ -60,6 +60,9 @@
                                     <li><a  href="@{Application.index()}" style="text-decoration:none;"> Home</a></li>
                                     <li><a  href="@{Application.index()}" style="text-decoration:none;">Services</a></li>
                                     <li><a  href="@{Application.index()}" style="text-decoration:none;">About Us</a></li>
+                                    #{if session.get("menu").equals("4")}
+                                    <li><a  href="@{MonevCtr.daftarKlpd()}" style="text-decoration:none;">Daftar Anggaran</a></li>
+                                    #{/if}
                                 </ul>
                             </nav>
                         </div>

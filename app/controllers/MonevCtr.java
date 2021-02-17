@@ -11,18 +11,22 @@ import java.sql.Statement;
 public class MonevCtr extends Application{
 
     public static void index(){
-        render();
-    }
-
-    public static void daftarKlpd(){
+        session.put("menu", 1);
         render();
     }
 
     public static void pemula(){
+        session.put("menu", 2);
+        render();
+    }
+
+    public static void daftarKlpd(){
+        session.put("menu", 3);
         render();
     }
 
     public static void detailAnggaranKlpd (String kdKlpd){
+        session.put("menu", 4);
         if (kdKlpd != null){
             Klpd klpd = Klpd.findById(kdKlpd);
             Connection conn = null;

@@ -29,6 +29,7 @@ public class Application extends Controller {
     }
 
     public static void index() {
+        session.put("menu", 99);
         render();
     }
 

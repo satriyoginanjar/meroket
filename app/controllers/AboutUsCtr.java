@@ -1,8 +1,9 @@
 package controllers;
 
-public class HomeCtr extends Application{
+public class AboutUsCtr extends Application{
 
     public static void index (){
+        session.put("menu", 5);
         render();
     }
 }

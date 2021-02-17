@@ -182,11 +182,41 @@
             </section>
         </div>
     </div>
+
     <div class="container">
+        <div class="grey-bg container-fluid">
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-12 mt-3 mb-1">
+                    <h4 class="text-uppercase">Detail Paket Non Tender</h4>
+                    <p>Data paket telah di limit, silahkan registrasi terlebih dahulu untuk mendapatkan semua data.</br>Klik nama paket untuk mengetahui rincian paket pekerjaan.</p>
+                    <p></p>
+                </div>
+            </div>
+            <div style="margin : 10px;">
+                <table id="nonTenderTable" class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Paket</th>
+                        <th scope="col">Metode Pemilihan</th>
+                        <th scope="col">Jenis Pengadaan</th>
+                        <th scope="col">Lokasi Pekerjaan</th>
+                        <th scope="col">Pagu Paket</th>
+                    </tr>
+                    </thead>
+                    <tbody>
 
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
     </div>
-
-
+    #{if klpd.id != null}
+        #{datatables.nonTenderTable kdKlpd: klpd.id, tahun: TAHUN_ANGGARAN_SESSION/}
+    #{/if}
 
 
 
