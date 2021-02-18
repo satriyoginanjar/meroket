@@ -7,6 +7,7 @@ import play.db.DB;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.ParseException;
 
 public class MonevCtr extends Application{
 
@@ -91,6 +92,11 @@ public class MonevCtr extends Application{
         }else{
             index();
         }
+    }
+
+    public static void detailPaketNonTender(Long idPaket) throws ParseException {
+        System.out.println("id nyaaaa "+idPaket);
+        render();
     }
 
 

@@ -2,38 +2,25 @@
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.23/af-2.3.5/b-1.6.5/cr-1.5.3/fc-3.3.2/fh-3.1.7/kt-2.5.3/r-2.2.7/rg-1.1.2/rr-1.2.7/sc-2.0.3/sb-1.0.1/sp-1.2.2/sl-1.3.1/datatables.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
 <script type="text/javascript">
 $(document).ready(function() {
 
 
-	var oTable = oTable = $('#nonTenderTable').dataTable({
+	var oTable = oTable = $('#tenderTable').dataTable({
 		aoColumns: [
             { 	"sWidth": "2%",  "bSortable": false },
-
-            {
-                "sWidth": "53%", "bSortable": false, className:"nm_pkt",
-
-                    render: function(data, oObj, row){
-                    var returnNamaPaketString='';
-                    returnNamaPaketString = returnNamaPaketString.concat("<a style='color:black; text-decoration:none;' data-toggle=\"modal\" href='" + path + "/nontender/2021/"+ row[0] + "' data-target=\"#myModal\"> "+data+"</a>");
-
-                    return returnNamaPaketString;
-                }
-
-            },
-
+            { 	"sWidth": "53%", "bSortable": false, className:"nm_pkt" },
             { 	"sWidth": "10%", "bSortable": false },
             { 	"sWidth": "10%", "bSortable": false },
-            { 	"sWidth": "10%", "bSortable": false },
-            { 	"sWidth": "15%", "bSortable": true, render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp. ',' ' ) },
+            { 	"sWidth": "15%", "bSortable": false },
+            { 	"sWidth": "10%", "bSortable": true, render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp. ',' ' ) },
 	 	],
 
 
         pagingType: "full_numbers",
         processing: true,
         serverSide: true,
-        sAjaxSource: "@{DataTableCtr.dataTableNonTenderKldi(_kdKlpd,_tahun)}",
+        sAjaxSource: "@{DataTableCtr.dataTableTenderKldi(_kdKlpd,_tahun)}",
         drawCallback: function ( oSettings ) {
  			/* Need to redo the counters if filtered or sorted */
             if ( oSettings ){
@@ -54,8 +41,8 @@ $(document).ready(function() {
  		language: {
             "sLengthMenu":   "Tampilkan _MENU_ entri",
             "sZeroRecords":  "Tidak ditemukan data yang sesuai",
-            "sInfo":         "",
-            "sInfoEmpty":    "",
+            "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+            "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
             "sInfoFiltered": "",
             "sInfoPostFix":  "",
             "sSearch":       "Cari:",
@@ -68,36 +55,9 @@ $(document).ready(function() {
                 "sLast":     "Terakhir"
             },
         },
+
+
     });
-});
-
-$('body').on('hidden.bs.modal', '.modal', function () {
-    $(this).removeData('bs.modal');
-});
-</script>
-
-
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title">Modal title</h3>
-
-            </div>
-            <div class="modal-body"><div class="te"></div></div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
-<script>
-    $('body').on('hidden.bs.modal', '.modal', function () {
-    $(this).removeData('bs.modal');
 });
 
 </script>

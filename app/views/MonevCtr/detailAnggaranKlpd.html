@@ -1,4 +1,5 @@
     #{extends 'main.html' /} #{set title:'Detail Anggaran' /}
+
 <style>
     .card {
     position: relative;
@@ -192,7 +193,7 @@
             <div class="row" style="margin-top: 20px;">
                 <div class="col-12 mt-3 mb-1">
                     <h4 class="text-uppercase">Detail Paket Non Tender</h4>
-                    <p>Data paket telah di limit, silahkan registrasi terlebih dahulu untuk mendapatkan semua data.</br>Klik nama paket untuk mengetahui rincian paket pekerjaan.</p>
+                    <p>Data paket telah di limit, silahkan registrasi terlebih dahulu untuk mendapatkan informasi lebih lengkap.</p>
                     <p></p>
                 </div>
             </div>
@@ -215,13 +216,45 @@
                     </tfoot>
                 </table>
             </div>
-
         </div>
     </div>
     #{if klpd.id != null}
         #{datatables.nonTenderTable kdKlpd: klpd.id, tahun: TAHUN_ANGGARAN_SESSION/}
     #{/if}
 
+    <div class="container">
+        <div class="grey-bg container-fluid">
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-12 mt-3 mb-1">
+                    <h4 class="text-uppercase">Detail Paket Tender</h4>
+                    <p>Data paket telah di limit, silahkan registrasi terlebih dahulu untuk mendapatkan informasi lebih lengkap.</p>
+                    <p></p>
+                </div>
+            </div>
+            <div style="margin : 10px;">
+                <table id="tenderTable" class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col" style="text-transform: capitalize;">Nama Paket</th>
+                        <th scope="col">Metode Pemilihan</th>
+                        <th scope="col">Jenis Pengadaan</th>
+                        <th scope="col">Lokasi Pekerjaan</th>
+                        <th scope="col">Pagu Paket</th>
+                    </tr>
+                    </thead>
+                    <tbody>
 
-
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    </div>
+    #{if klpd.id != null}
+    #{datatables.tenderTable kdKlpd: klpd.id, tahun: TAHUN_ANGGARAN_SESSION/}
+    #{/if}
 </div>
