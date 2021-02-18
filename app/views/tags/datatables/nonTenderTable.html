@@ -10,19 +10,7 @@ $(document).ready(function() {
 	var oTable = oTable = $('#nonTenderTable').dataTable({
 		aoColumns: [
             { 	"sWidth": "2%",  "bSortable": false },
-
-            {
-                "sWidth": "53%", "bSortable": false, className:"nm_pkt",
-
-                    render: function(data, oObj, row){
-                    var returnNamaPaketString='';
-                    returnNamaPaketString = returnNamaPaketString.concat("<a style='color:black; text-decoration:none;' data-toggle=\"modal\" href='" + path + "/nontender/2021/"+ row[0] + "' data-target=\"#myModal\"> "+data+"</a>");
-
-                    return returnNamaPaketString;
-                }
-
-            },
-
+            { 	"sWidth": "53%", "bSortable": false, className:"nm_pkt" },
             { 	"sWidth": "10%", "bSortable": false },
             { 	"sWidth": "10%", "bSortable": false },
             { 	"sWidth": "10%", "bSortable": false },
