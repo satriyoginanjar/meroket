@@ -21,6 +21,11 @@ public class MonevCtr extends Application{
         render();
     }
 
+    public static void pemula2(){
+        session.put("menu", 2);
+        render();
+    }
+
     public static void daftarKlpd(){
         session.put("menu", 3);
         render();
