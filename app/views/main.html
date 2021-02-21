@@ -59,11 +59,10 @@
                                 <ul id="navigation" style="margin-right: -200px;">
                                     <li><a  href="@{Application.index()}" style="text-decoration:none;"> Home</a></li>
                                     <li><a  href="@{ServiceCtr.index()}" style="text-decoration:none;">Services</a></li>
+                                    <li><a  href="@{MonevCtr.daftarKlpd()}" style="text-decoration:none;">Daftar Anggaran</a></li>
                                     <li><a  href="@{MonevCtr.pemula2()}" style="text-decoration:none;">Dokumentasi</a></li>
                                     <li><a  href="@{AboutUsCtr.index()}" style="text-decoration:none;">Hubungi Kami</a></li>
-                                    #{if session.get("menu").equals("4")}
-                                    <li><a  href="@{MonevCtr.daftarKlpd()}" style="text-decoration:none;">Daftar Anggaran</a></li>
-                                    #{/if}
+
                                 </ul>
                             </nav>
                         </div>
