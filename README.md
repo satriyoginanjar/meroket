@@ -1,2 +1,2 @@
 # meroket
-please access my project on meroket.cyou
+please access my project on http://meroket.cyou/genos
